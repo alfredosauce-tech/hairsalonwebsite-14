@@ -1,0 +1,201 @@
+body{
+  background-color: rgb(238, 232, 232);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+header{
+  background-color: rgb(11, 75, 75);
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+
+  
+}
+.logo{
+  background-color: rgb(148, 148, 151);
+  width: 80%;
+  display: flex;
+  justify-content:center;
+  margin:auto;
+  height: 45px;
+  align-items: center;
+  color: antiquewhite;
+}
+nav{
+  
+  color: white;
+
+
+}
+header ul{
+  list-style-type: none;
+  display:flex;
+  justify-content: space-around;
+}
+
+.hero{
+  background-color: blueviolet;
+  height: 400px;
+  background-image: url("carlos-magno-bpJKfDo1ZdE-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: aliceblue;
+  display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+ 
+}
+h1{
+  padding-right: 25px;
+}
+.four-boxes{
+  background-color: rgb(243, 234, 236);
+  height: 400px; 
+  display: flex;
+  justify-content:space-around;
+  padding: 25px;
+
+
+  
+
+}
+
+.four-boxes p{
+  padding: 15px;
+  
+}
+
+
+.cut-image img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 150px;
+  width: 125px;
+ 
+
+}
+.cut-image{
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+
+.featured-box{
+  background-color: rgb(216, 226, 220);
+  height: auto;
+  grid-row: 1/3;
+
+  
+}
+.hairstyle-section{
+  background-color: rgb(143, 161, 211);
+  height: auto;
+  
+
+}
+
+#container p{
+
+  margin: auto auto;
+  width: 80%;
+
+}
+.hair-loss{
+  background-color: rgb(129, 144, 209);
+  height: auto;
+  grid-column: 2/3 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.lower-section{
+  border: rgb(8, 7, 4) 10px solid;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+grid-template-rows: 2fr 1fr;
+height: 600px;
+
+}
+footer{
+  background-color: rgb(77, 126, 190);
+  height: 100px;
+}
+.title-box{
+  background-color: rgb(11, 69, 136);
+  width: 140px;
+  height: 40px;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: -45px;
+  left: 20px;
+  color: antiquewhite;
+  
+
+}
+ 
+
+#container{
+  display: flex;   
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+margin: 0 auto;
+  
+
+
+}
+main{
+  width: 80%;
+  margin: auto;
+}
+ @media only screen and (max-width: 600px) {
+  header { 
+    grid-template-columns: 30% 70%;
+  width: 100%;
+  }
+  header ul{
+    padding-right: 25px;
+  
+
+  }
+  header li {
+    padding-right: 10px;
+  }
+
+ .four-boxes{
+   display: flex;
+   flex-direction: column;
+height: auto;
+ }
+ .lower-section{
+   height: auto;
+   /* grid-template-columns: 1fr; */
+   /* grid-template-rows: repeat(3,1fr); */
+display: flex;
+flex-direction: column;
+
+ }
+ .title-box{
+   top: 0px;
+ }
+ .hair-loss{
+   padding-top: 40px;
+  }
+  .lower-section section{
+    
+    padding-bottom: 40px;
+}
+} 
+
